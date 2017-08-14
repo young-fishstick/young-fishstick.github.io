@@ -12,15 +12,136 @@
   </head>
 
   <body>
-    <!-- ==== START Profile Header SECTION ==== -->
-  	<div class="section white">
+  <!-- ==== START Profile Header SECTION ==== -->
+  	<div class="section blue-grey">
   		<div class="container center-align">
-				<h2 class="header red-text">Welcome to Dorian's Meme Shop</h2>
-				<h3 class="black-text light">Buy Cheap Memes</h3>
-				<h5 class="red-text light">NO REFUNDS</h5>
+  			<div class="row">
+  				<img id="profile" class="responsive-img circle" src="images/profile.jpg">
+  			</div>
+  			<div class="row">
+  				<h2 class="header orange-text">Dorian's Meme Shop</h2>
+  				<h3 class="white-text light">Buy Fresh Memes Here</h3>
+  				<h5 class="orange-text light">NO REFUNDS</h5>
+  			</div>
+  <!-- Social Media Links -->
+  			<div class="row">
+  				<a href="https://github.com/vmshalkey" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="GitHub">
+  					<img class="responsive-img" src="images/github-hex.png">
+  				</a>
+  				<a href="https://www.linkedin.com/in/vmshalkey" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="LinkedIn">
+  					<img class="responsive-img" src="images/linkedin-hex.png">
+  				</a>
+  				<a href="http://stackoverflow.com/users/5684492/vmshalkey" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="Stack Overflow">
+  					<img class="responsive-img" src="images/stackoverflow-hex.png">
+  				</a>
+  				<a href="https://www.facebook.com/vmshalkey" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="Facebook">
+  					<img class="responsive-img" src="images/facebook-hex.png">
+  				</a>
+  				<a href="https://www.youtube.com/channel/UCmXCpqhIUpaPNE993U6pS2A/feed?view_as=public" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="YouTube">
+  					<img class="responsive-img" src="images/youtube-hex.png">
+  				</a>
+  			</div>
   		</div>
   	</div>
-    <!-- ==== END Profile Header SECTION==== -->
+  <!-- ==== END Profile Header SECTION==== -->
+  <!-- ==== START About Me SECTION==== -->
+  	<div id="about" class="section"></div>
+  		<div class="container divider"></div>
+  			<div class="container section center-align">
+  				<h2 class="blue-text">About Me</h2>
+  				<p class="flow-text">My name is Vanessa M. Shalkey, and I'm a full-stack web developer. I love gaming, shredding the slopes, and roughing it with my two puppies! Learn more about me in the section below. You can hover over certain words or click on the links to get more information.</p>
+  			</div>
+  		</div>
+  	</div>
+  <!-- ==== END About Me SECTION ==== -->
+  <!-- ==== START Contact Me SECTION ==== -->
+  	<div id="contact" class="section"></div>
+  		<div class="container divider"></div>
+  			<div class="container section center-align">
+  				<h2 class="blue-text">Contact Me</h2>
+  				<p class="flow-text">You can get in touch with me by clicking on the icons or send me a message using the form below. I would love to hear from you!</p>
+  <!-- Social Media Links -->
+  				<div class="row">
+  					<a href="https://www.linkedin.com/in/vmshalkey" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="LinkedIn">
+  						<img class="responsive-img" src="images/linkedin-hex.png">
+  					</a>
+  					<a href="sms:1-808-421-7908" class="tooltipped hide-on-med-and-up" data-position="bottom" data-delay="25" data-tooltip="iMessage">
+  						<img class="responsive-img" src="images/imessage-hex.png">
+  					</a>
+  					<a href="mailto:vmshalkey@gmail.com" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="Email">
+  						<img class="responsive-img" src="images/mail-hex.png">
+  					</a>
+  					<a href="https://www.google.com/maps/place/Seattle,+WA/@47.6149942,-122.4759899,11z/data=!3m1!4b1!4m2!3m1!1s0x5490102c93e83355:0x102565466944d59a" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="My Location">
+  						<img class="responsive-img" src="images/location-hex.png">
+  					</a>
+  					<a href="https://www.facebook.com/vmshalkey" class="tooltipped" data-position="bottom" data-delay="25" data-tooltip="Facebook">
+  						<img class="responsive-img" src="images/facebook-hex.png">
+  					</a>
+  				</div>
+  <!-- Send Message Form (Formspree)-->
+  				<div class="row">
+  					<form class="col s12 m12 l12">
+  						<div class="row">
+  							<div class="input-field col s12 m6 l6">
+  								<i class="material-icons prefix">account_circle</i>
+  								<input id="name" type="text" class="validate" name="name">
+  								<label for="_name">Name</label>
+  							</div>
+  							<div class="input-field col s12 m6 l6">
+  								<i class="material-icons prefix">work</i>
+  								<input id="company" type="text" class="validate" name="company">
+  								<label for="company">Company</label>
+  							</div>
+  						</div>
+  						<div class="row">
+  							<div class="input-field col s12 m6 l6">
+  								<i class="material-icons prefix">email</i>
+  								<input id="email" type="email" class="validate" name="_replyto">
+  								<label for="email" data-error="invalid">Email</label>
+  							</div>
+  							<div class="input-field col s12 m6 l6">
+  								<i class="material-icons prefix">phone</i>
+  								<input id="phone_num" type="tel" class="validate" name="phone_num">
+  								<label for="phone_num">Phone Number</label>
+  							</div>
+  						</div>
+  						<div class="row">
+  							<div class="input-field col s12 m12 l12">
+  								<i class="material-icons prefix">mode_edit</i>
+  								<textarea id="message" class="materialize-textarea" name="body"></textarea>
+  								<label for="message">Message</label>
+  							</div>
+  						</div>
+  						<input type="hidden" name="_subject" value="Making a Connection" />
+  						<input type="hidden" name="_next" value="http://vmshalkey.github.io/thanks.html" />
+  						<input type="text" name="_gotcha" style="display:none" />
+  						<button class="btn waves-effect waves-light light-blue" type="submit" name="action">Submit
+  							<i class="material-icons right">send</i>
+  						</button>
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  <!-- ==== END Contact Me SECTION ==== -->
+  <!-- ==== START Footer SECTION ==== -->
+  	<footer class="page-footer orange">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col s12 m6 l6">
+  					<h5 class="white-text">Thanks for Visiting!</h5>
+  					<p class="grey-text text-lighten-4">I hope you enjoyed my site. Please see my credentials on <a class="white-text underline" href="https://www.linkedin.com/in/vmshalkey">LinkedIn</a>. Don't forget to visit my <a class="white-text underline" href="https://www.github.com/vmshalkey">GitHub</a> page to see examples of my code. You can also view some video demos of my work on <a class="white-text underline" href="https://www.youtube.com/channel/UCmXCpqhIUpaPNE993U6pS2A/feed?view_as=public">YouTube</a>. Finally, check out my <a class="white-text underline" href="">blog</a> to see my most recent posts!</p>
+  					<a class="waves-effect waves-light btn light-blue" href="http://vmshalkey.github.io/"><i class="material-icons left">replay</i>start at the top!</a>
+  				</div>
+  <!-- Copyright -->
+  		<div class="footer-copyright">
+  			<div class="container">
+  				© Aug 2017 by D. S. Magee-Petty. All rights reserved.
+  				<a class="grey-text text-lighten-4 right" href="https://github.com/vmshalkey/vmshalkey.github.io">See the source code for this website on GitHub!</a>
+  			</div>
+  		</div>
+  	</footer>
+  <!-- ==== END Footer SECTION ==== -->
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
